@@ -10,12 +10,12 @@ Pandas
 Importing Libraries
 import pandas as pd
 import random
-**o	pandas** → used for data handling and analysis (tables/dataframes) 
-**o	random** → used to generate random values (names, age, marks, etc.)
-**Created lists of:
+o	pandas → used for data handling and analysis (tables/dataframes) 
+o	random → used to generate random values (names, age, marks, etc.)
+Created lists of:
 •	Student names 
 •	Cities 
-•	Schools** 
+•	Schools 
 These lists are used to randomly assign values to students.
 # Data generate
 names = ["Ali", "Sara", "Ahmed", "Ayesha", "Bilal", "Zain", "Hina", "Usman", "Noor", "Fatima"]
@@ -69,12 +69,58 @@ filtered_df.to_csv("filtered_marks.csv", index=False)
 top_students.to_csv("top_students.csv", index=False)
 print("Project Completed Successfully!")
 
-****Explanation of the Task ****
-This project focuses on using the Pandas library in Python to perform fundamental data handling and analysis tasks. The main goal is to read data from a CSV file, explore its structure, apply statistical methods, and generate useful insights from the dataset.
-At the beginning, the dataset is either created programmatically or imported from an existing CSV file. This data is then converted into a Pandas DataFrame, which provides a clean and structured way to manage tabular data. Initial exploration is carried out using functions like head(), tail(), and info(). These functions help users preview the first and last few rows, understand column data types, and identify any missing values in the dataset.
-The project also includes basic statistical analysis of numerical columns. Functions such as mean(), median(), min(), max(), and count() are used to analyze values like age and marks. These calculations help in understanding patterns, trends, and the overall distribution of the data.
-In addition, data filtering techniques are applied to extract meaningful subsets. For example, students with marks above a certain threshold can be selected to identify high performers. The project also demonstrates how to select specific columns and sort data to find top results efficiently.
-Another important part of the project is saving the processed data into new CSV files. This step highlights the importance of exporting cleaned and analyzed data for future use or sharing with others.
-Overall, this project builds a strong foundation in data analysis using Pandas. It helps learners develop practical skills in data manipulation, filtering, and statistical evaluation. The project also promotes clean coding practices, such as proper variable naming and step-by-step organization, which improve readability.
-Additionally, the project can be easily extended by adding visualizations, working with larger datasets, or applying advanced techniques. This makes it suitable for beginners and useful for building a professional portfolio.
+Project_No_1_NumPy_Data_Explorer	
+
+1. Introduction
+This project is based on the NumPy library in Python, which is used for fast numerical computations and data analysis. It helps in handling large datasets efficiently.
+2. Array Creation
+arr = np.array([10, 20, 30, 40, 50])
+We create a NumPy array. An array is similar to a Python list, but it is faster and more efficient for mathematical operations.
+3. Indexing & Slicing
+arr[0]
+arr[:3]
+Indexing means accessing a single element 
+Slicing means accessing multiple elements 
+Example:
+•	arr[0] → first element 
+•	arr[:3] → first three elements
+
+4. Mathematical Operations
+arr + 5
+arr ** 2
+NumPy allows operations on the whole array at once:
+•	+5 adds 5 to every element 
+•	**2 squares every element 
+5. Axis-wise Operations (2D Array)
+matrix.sum(axis=0)
+matrix.sum(axis=1)
+•	axis=0 → column-wise calculation 
+•	axis=1 → row-wise calculation 
+This is useful for analyzing structured data.
+ 6. Statistical Operations
+np.mean(arr)
+np.median(arr)
+np.std(arr)
+•	Mean → average value 
+•	Median → middle value 
+•	Standard deviation → measures data spread 
+7. Reshaping
+np.arange(1,10).reshape(3,3)
+Reshaping means changing the shape of an array (for example, 1D → 2D matrix).
+8. Broadcasting
+reshaped + 10
+Broadcasting allows NumPy to automatically apply operations to all elements without using loops.
+9. Save & Load Array
+np.save()
+np.load()
+•	save() stores the array in a file 
+•	load() retrieves the saved array 
+10. Performance Comparison
+We compare:
+•	Python lists → slower 
+•	NumPy arrays → much faster 
+This shows that NumPy is optimized for high-performance computing.
+
+
+
 
